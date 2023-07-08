@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--amarillo);
+}
+.buscador{
+    margin: 10px;
+    padding: 5px;   
+    background-color: white;
+    color: var(--gris-oscuro);
+    
+}
+.icon-buscador i{
+    background-color: var(--gris-claro);
+    color: var(--gris-oscuro);
+    border: 1px solid var(--gris-oscuro);
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 3px;
+
+}
+header ul li{
+    list-style-type: none;
+  
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3.titulares {
+    font-size: 24px;
+}
+
+p.precio {
+    font-size: 18px;
+}
+
+p.descuentos {
+    font-size: 16px;
+}
+
+h4.descripciones {
+    font-size: 16px;
+}
+
+main {
+    background-color: var(--gris-claro);
+}
+
+.burger-menu{
+    text-align: center;
+       
+}
+.burger-menu i {
+    background-color: blue;
+    color: white;
+   
+    font-size: 20px;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px 0 20px 0;
+}
+.formasdepago{
+    text-align: center;
+}
+.logo{
+    width: 50px;
+    padding: 10px;
+}
+.icon-footer{
+    color: rgb(5, 5, 188);
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+h4.footer{
+    text-align: center;
+    font-weight: bold;
+}
+p.footer{
+    text-align: center;
+}
