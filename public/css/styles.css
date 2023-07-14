@@ -25,20 +25,24 @@ header {
 
 .buscador {
     padding: 5px;
-    background-color: white;
-    color: var(--gris-oscuro);
-    width: 50%;
-    display: inline-block;
+   width: 50%;
+   display: flex;
+   align-items: center;
 
-}
+  }
+  .input{
+background-color: #FFF;
+color: var(--gris-oscuro);
+padding: 5px;
 
-.icon-buscador i {
-    background-color: var(--gris-claro);
-    color: var(--gris-oscuro);
-    border: 1px solid var(--gris-oscuro);
-    font-weight: bold;
-    margin-left: 10px;
-    padding: 3px;
+  }
+
+.icon-buscador {
+    background-color: #FFF;
+color: var(--gris-oscuro);
+padding: 5px;
+
+
 
 }
 
@@ -174,8 +178,7 @@ article {
 
 .header-superior{
     display: flex;
-    width: 50%;
-    flex-wrap: wrap;
+     flex-wrap: wrap;
 }
 
 
