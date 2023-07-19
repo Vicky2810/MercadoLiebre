@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+@import "reg.css";
 
 :root {
     --amarillo: #EAC926;
