@@ -4,67 +4,76 @@ h2.cuenta {
     width: 100%;
 
 }
+main {
+   
+    height: 150vh;
+}
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 70%;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 5px;
+    margin: 5% 20%;
+     border-radius: 5px;
     border: solid 1 px grey;
-
-
 }
+
 
 input[type="text"],
 input[type="password"],
-input[type="date"]{
+input[type="date"] {
     width: 70%;
     padding: 10px;
     margin: 15px;
-   
-    border-radius:5px;
+
+    border-radius: 5px;
 
 }
-input[type="text"]:focus{
+
+input[type="text"]:focus {
     border: 5px solid skyblue;
 }
-input[type="password"]:focus{
+
+input[type="password"]:focus {
     border: 5px solid skyblue;
 }
-input[type="date"]:focus{
+
+input[type="date"]:focus {
     border: 5px solid skyblue;
 }
 
 input {
     margin: 15px;
     padding: 10px;
+}
+
+input[type="checkbox"]{
+      margin: 20px 5px;
+      padding: 5px;
+}
+
+input[type="radio"] {
+    width: 5%;
+    margin: 5% 2%;
+    text-align: center;
+    padding: 20px;
     
 }
 
-input[type="checkbox"] {
-    display: flex;
-    width: 50%;
-    flex-direction: row-reverse;
+input[type="radio"]+label {
+    width: 20px;
+    height: 20px;
     margin: 15px;
-    text-align: center;
-    padding: 10px;
 }
-input[type="radio"] {
-    display: flex;
-    width: 30%;
-    flex-direction: row;
-    margin: 15px;
-    text-align: center;
-    padding: 10px;
-}
+
 h4.form {
     margin: 15px;
     font-weight: bold;
     font-size: 15px;
 }
+
+
 button[type="submit"] {
     width: 70%;
     padding: 10px;
@@ -73,22 +82,26 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     margin: 15px;
-     }
-     button[type="reset"] {
-        width: 70%;
-        padding: 10px;
-        background-color: gray;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        margin: 15px;
-         }
-         button.icon-buscador{
-            padding: 10px;
+}
+
+button[type="reset"] {
+    width: 70%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+button.icon-buscador {
+    padding: 10px;
     border-radius: 5px;
     border: none;
-          }
-          button[type="submit"]:hover{
-            background-color: #0022AA;
-          } 
-          /*
+}
+
+button[type="submit"]:hover {
+    background-color: #0022AA;
+}
+
+/*

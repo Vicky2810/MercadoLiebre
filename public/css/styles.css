@@ -1,5 +1,6 @@
 @import "reg.css";
 @import "login.css";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -52,7 +53,7 @@ header {
     width: 50%;
     flex-grow: 1;
 }*/
-div.input{
+div.input {
     width: 70%;
 }
 
@@ -60,12 +61,38 @@ div.input{
     background-color: #FFF;
     color: var(--gris-oscuro);
     padding: 3px;
+
+}
+
+#Buscar {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+   
+}
+
+button[type="submit"].icon-busc {
+    width: 15%;
+    background-color: white;
+    color: gray;
+    border: none;
+    border-radius: 5px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    text-align: center;
 }
-
+.icon-busc:focus{
+    color: skyblue;
+   background-color: #03264C;
+    text-align: center;
+}
+section.banner img {
+    width: 100%;
+  }
 header ul li {
     list-style-type: none;
 
@@ -115,6 +142,8 @@ h4.descripciones {
 main {
     width: 90vw;
     margin: auto;
+    height: 100%;
+    padding-bottom: 20px;
 }
 
 .burger-menu {
@@ -141,13 +170,16 @@ main {
 
 .logo {
     width: 50%;
-    padding: 5px;
+    padding: 10px;
 
 }
-.footer{
+
+.footer {
     background-color: white;
-   
+    padding-bottom: 5px;
+
 }
+
 .icon-footer {
     color: rgb(5, 5, 188);
     font-size: 2em;
@@ -156,12 +188,13 @@ main {
     margin-bottom: 10px;
 
 }
-.footer div{
+
+.footer div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
-    
+    padding-bottom: 10px;
 }
 
 .footer h4 {
@@ -169,10 +202,9 @@ main {
     font-weight: bold;
 }
 
-.footer p{
+.footer p {
     text-align: center;
 }
-
 
 article img {
     width: 100%;
@@ -191,17 +223,19 @@ article {
     width: 80%;
 
 }
-article:hover .descripciones{
-display: block;
+
+article:hover .descripciones {
+    display: block;
 }
 
 article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-article:hover .fa-truck{
+article:hover .fa-truck {
     transform: rotate(-90deg);
 }
+
 .product-info {
     border-top: solid 1px #ebebeb;
     width: 100%;
@@ -232,33 +266,23 @@ article:hover .fa-truck{
     align-items: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 70%;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 5px;
-    border: solid 1 px grey;
-
-
-}
 input[type="text"] {
     width: 70%;
     padding: 10px;
     margin: 15px;
-    border: 1px  #ccc;
+    border: 1px #ccc;
     border-radius: 5px;
 
 }
+
+
 
 
 
 
 
 @media (min-width: 361px) {
-   
+
     article {
         width: 40%;
 
@@ -283,7 +307,7 @@ input[type="text"] {
     }
 
     article {
-      
+
         width: 20%;
         justify-content: space-between;
     }
@@ -352,25 +376,28 @@ input[type="text"] {
         border-radius: 5px;
         margin: 2px;
     }
-    
-        
-    }
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex-direction: row;
-        
+
+
 }
-.footer div{
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.footer div {
     width: 25%;
     align-items: center;
-    
-   
+
+
 }
+
 .icon-footer:hover {
     color: skyblue;
     font-size: 2em;
     text-align: center;
-    
+
 }

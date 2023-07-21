@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercadoliebre</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="link rel=preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -21,8 +21,9 @@
             <img class="Logo" src="/images/logo-mercado-liebre.svg" width="30%" alt="Logo">
             <div class="buscador">
                 <div class="input"> <label for="Buscar"></label>
-                    <input type="text" name="Buscar" id="Buscar" placeholder="Buscar producos, marca"></div>
-                <button ><i class="fa fa-search"></i></button>
+                    <input type="text" name="Buscar" id="Buscar" placeholder="Buscar productos, marca">
+                </div>
+                <button type="submit" class="icon-busc"><i class="fa fa-search"></i></button>
             </div>
             <div class="formasdepago"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de
                 crédito</div>
@@ -54,19 +55,18 @@
     </header>
     <main>
         <section>
-
-           
-            <form action="/" method="get" >
+            <form action="/" method="get">
                 <h3 class="cuenta">Creá tu cuenta</h3>
                 <div><label for="Nombre y apellido"></label>
                     <input type="text" name="Nombre y apellido" id="Nombre y apellido" placeholder="Nombre y Apellido">
-                <span class="feedback"></span>
+                    <span class="feedback"></span>
                 </div>
                 <div> <label for="Usuario"></label>
                     <input type="text" name="Usuario" id="Usuario" placeholder="Nombre de usuario">
                     <span class="feedback"></span>
                 </div>
                 <h4 class="form">Fecha de nacimiento</h4>
+
                 <div><label for="fecha"></label>
                     <input type="date" name="fecha" id="fecha">
                     <span class="feedback"></span>
@@ -78,15 +78,16 @@
 
                 <div>
                     <h4 class="form">Elegí tu perfil</h4>
-                    <label for="comp">Comprador</label>
+                                     <label for="comp">Comprador</label>
                     <input type="radio" name="perfil" id="comp" value="comprador">
                     <label for="vendedor">Vendedor</label>
                     <input type="radio" name="perfil" id="vendedor" value="vendedor">
                 </div>
                 <div>
                     <h4 class="form">Categoría de interés</h4>
+                
                     <label for="electro">Electro</label>
-                    <input type="checkbox" name="interes" id="electro" value="electro"placeholder="Electro">
+                    <input type="checkbox" name="interes" id="electro" value="electro" placeholder="Electro">
                     <label for="moda">Moda</label>
                     <input type="checkbox" name="interes" id="moda" value="moda">
                     <label for="hogar">Hogar</label>
@@ -95,20 +96,23 @@
                     <input type="checkbox" name="interes" id="Jugueteria" value="Jugueteria">
                     <label for="Vida sana">Vida sana</label>
                     <input type="checkbox" name="interes" id="Vida sana" value="Vida sana">
+                <br>
                 </div>
-                <h4>Foto de usuario</h4>
+                <br>
+                <h4 class="form">Foto de usuario</h4>
                 <div><label for="foto"></label>
                     <input type="file" name="foto" id="foto" accept=".jpg, .png">
                     <span class="feedback"></span>
                 </div>
 
                 <div><label for="Contrasenia"></label>
-                    <input type="password" name="Contrasenia" id="Contrasenia"placeholder="Creá una contraseña">
+                    <input type="password" name="Contrasenia" id="Contrasenia" placeholder="Creá una contraseña">
                     <span class="feedback"></span>
                 </div>
 
                 <div><label for="ConfirmarContrasenia"></label>
-                    <input type="password" name="ConfirmarContrasenia" id="ConfirmarContrasenia"placeholder="Confirmar contraseña">
+                    <input type="password" name="ConfirmarContrasenia" id="ConfirmarContrasenia"
+                        placeholder="Confirmar contraseña">
                 </div>
 
                 <div><button type="submit">Enviar</button>
@@ -120,33 +124,36 @@
     </main>
     <footer>
         <div class="footer">
-        <div class="Fter">
-            <div class="icon-footer"><i class="fas fa-credit-card"></i></div>
-            <h4 class="footer">Pagá con tarjeta o en efectivo</h4>
-            <p class="footer">
-                Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre
-                es seguro!
-            </p>
+            <div class="Fter">
+                <div class="icon-footer"><i class="fas fa-credit-card"></i></div>
+                <h4 class="footer">Pagá con tarjeta o en efectivo</h4>
+                <p class="footer">
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre
+                    es seguro!
+                </p>
+            </div>
+            <div class="Fter">
+                <div class="icon-footer"><i class="fas fa-gift"></i></div>
+                <h4 class="footer">Envío gratis desde $ 2.500</h4>
+                <p class="footer">
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio
+                    de
+                    Mercado Puntos.
+                </p>
+            </div>
+            <div class="Fter">
+                <div class="icon-footer"><i class="fas fa-user-shield"></i></div>
+                <h4 class="footer">Seguridad, de principio a fin</h4>
+                <p class="footer">
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.
+                </p>
+            </div class="Fter">
         </div>
-        <div class="Fter">
-            <div class="icon-footer"><i class="fas fa-gift"></i></div>
-            <h4 class="footer">Envío gratis desde $ 2.500</h4>
-            <p class="footer">
-                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio
-                de
-                Mercado Puntos.
-            </p>
-        </div>
-        <div class="Fter">
-            <div class="icon-footer"><i class="fas fa-user-shield"></i></div>
-            <h4 class="footer">Seguridad, de principio a fin</h4>
-            <p class="footer">
-                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
-                protegid@.
-            </p>
-        </div class="Fter"> </div>
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-   
+
     </footer>
 </body>
 
