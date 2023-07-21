@@ -146,6 +146,7 @@ main {
 }
 .footer{
     background-color: white;
+   
 }
 .icon-footer {
     color: rgb(5, 5, 188);
@@ -155,16 +156,14 @@ main {
     margin-bottom: 10px;
 
 }
-div.footer{
+.footer div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
     
 }
-.footer article{
-    width: 100%;
-}
+
 .footer h4 {
     text-align: center;
     font-weight: bold;
@@ -353,4 +352,25 @@ input[type="text"] {
         border-radius: 5px;
         margin: 2px;
     }
+    
+        
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        
+}
+.footer div{
+    width: 25%;
+    align-items: center;
+    
+   
+}
+.icon-footer:hover {
+    color: skyblue;
+    font-size: 2em;
+    text-align: center;
+    
 }
