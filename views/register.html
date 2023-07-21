@@ -20,8 +20,9 @@
         <div class="header-superior">
             <img class="Logo" src="/images/logo-mercado-liebre.svg" width="30%" alt="Logo">
             <div class="buscador">
-                <div class="input">Buscar productos, marca</div>
-                <div class="icon-buscador"><i class="fa fa-search"></i></div>
+                <div class="input"> <label for="Buscar"></label>
+                    <input type="text" name="Buscar" id="Buscar" placeholder="Buscar producos, marca"></div>
+                <button ><i class="fa fa-search"></i></button>
             </div>
             <div class="formasdepago"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de
                 crédito</div>
@@ -54,31 +55,39 @@
     <main>
         <section>
 
-            <form action="/" method="get">
-                <div><label for="Nombre y apellido">Nombre y Apellido</label>
+            /*focus para poder cambiar el color del borde cuando hacen clic*/
+
+            <form action="/" method="get" >
+                <h3 class="cuenta">Creá tu cuenta</h3>
+                <div><label for="Nombre y apellido"></label>
                     <input type="text" name="Nombre y apellido" id="Nombre y apellido" placeholder="Nombre y Apellido">
+                <span class="feedback"></span>
                 </div>
-                <div> <label for="Usuario">Nombre de Usuario</label>
-                    <input type="text" name="Usuario" id="Usuario" placeholder="Crea tu usuario">
+                <div> <label for="Usuario"></label>
+                    <input type="text" name="Usuario" id="Usuario" placeholder="Nombre de usuario">
+                    <span class="feedback"></span>
                 </div>
-                <div><label for="fecha">Fecha de nacimiento</label>
+                <h4 class="form">Fecha de nacimiento</h4>
+                <div><label for="fecha"></label>
                     <input type="date" name="fecha" id="fecha">
+                    <span class="feedback"></span>
                 </div>
-                <div><label for="Dom">Domicilio</label>
-                    <input type="text" name="Dom" id="Dom" placeholder="Calle falsa 123">
+                <div><label for="Domicilio"></label>
+                    <input type="text" name="Domicilio" id="Domicilio" placeholder="Domicilio">
+                    <span class="feedback"></span>
                 </div>
 
                 <div>
-                    <h4>Elegí tu perfil</h4>
+                    <h4 class="form">Elegí tu perfil</h4>
                     <label for="comp">Comprador</label>
                     <input type="radio" name="perfil" id="comp" value="comprador">
                     <label for="vendedor">Vendedor</label>
                     <input type="radio" name="perfil" id="vendedor" value="vendedor">
                 </div>
                 <div>
-                    <h4>Categoría de interés</h4>
+                    <h4 class="form">Categoría de interés</h4>
                     <label for="electro">Electro</label>
-                    <input type="checkbox" name="interes" id="electro" value="electro">
+                    <input type="checkbox" name="interes" id="electro" value="electro"placeholder="Electro">
                     <label for="moda">Moda</label>
                     <input type="checkbox" name="interes" id="moda" value="moda">
                     <label for="hogar">Hogar</label>
@@ -88,16 +97,19 @@
                     <label for="Vida sana">Vida sana</label>
                     <input type="checkbox" name="interes" id="Vida sana" value="Vida sana">
                 </div>
-                <div><label for="foto">Foto de Usuario</label>
+                <h4>Foto de usuario</h4>
+                <div><label for="foto"></label>
                     <input type="file" name="foto" id="foto" accept=".jpg, .png">
+                    <span class="feedback"></span>
                 </div>
 
-                <div><label for="Contrasenia">Contraseña</label>
-                    <input type="password" name="Contrasenia" id="Contrasenia">
+                <div><label for="Contrasenia"></label>
+                    <input type="password" name="Contrasenia" id="Contrasenia"placeholder="Creá una contraseña">
+                    <span class="feedback"></span>
                 </div>
 
-                <div><label for="ConfirmarContrasenia">Confirmar Contraseña</label>
-                    <input type="password" name="ConfirmarContrasenia" id="ConfirmarContrasenia">
+                <div><label for="ConfirmarContrasenia"></label>
+                    <input type="password" name="ConfirmarContrasenia" id="ConfirmarContrasenia"placeholder="Confirmar contraseña">
                 </div>
 
                 <div><button type="submit">Enviar</button>
@@ -108,15 +120,16 @@
         </section>
     </main>
     <footer>
-        <article>
+        <div class="footer">
+        <div class="Fter">
             <div class="icon-footer"><i class="fas fa-credit-card"></i></div>
             <h4 class="footer">Pagá con tarjeta o en efectivo</h4>
             <p class="footer">
                 Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre
                 es seguro!
             </p>
-        </article>
-        <article>
+        </div>
+        <div class="Fter">
             <div class="icon-footer"><i class="fas fa-gift"></i></div>
             <h4 class="footer">Envío gratis desde $ 2.500</h4>
             <p class="footer">
@@ -124,16 +137,17 @@
                 de
                 Mercado Puntos.
             </p>
-        </article>
-        <article>
+        </div>
+        <div class="Fter">
             <div class="icon-footer"><i class="fas fa-user-shield"></i></div>
             <h4 class="footer">Seguridad, de principio a fin</h4>
             <p class="footer">
                 ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
                 protegid@.
             </p>
-        </article>
+        </div class="Fter"> </div>
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+   
     </footer>
 </body>
 
