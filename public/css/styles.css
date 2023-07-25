@@ -57,9 +57,13 @@ header {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 100%;
-
+    transition: all 0.3s;
+    
 }
 
+#Buscar:focus {
+    border: 5px outset grey;
+}
 
 button.search-button {
     width: 15%;
@@ -73,10 +77,18 @@ button.search-button {
     border-bottom-right-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    transition: all 0.3s;
 }
+
 .search-button:hover i {
-    
-    color: white}
+
+    color: white
+}
+
+button.search-button:hover{
+    border: 3px inset var(--gris-claro);
+    background-color: #666;
+}
 
 section.banner img {
     width: 100%;
@@ -105,28 +117,19 @@ a {
     text-decoration: none;
     color: black;
 }
+a:hover{
+    font-weight: bold;
+    font-size: 18px;
+}
+a:hover i{
+    font-weight: bold;
+    font-size: 20px;
+}
 
 h3.titulares {
     font-size: 24px;
 }
 
-p.precio {
-    font-size: 18px;
-    width: 30%;
-    text-align: left;
-}
-
-p.descuentos {
-    font-size: 16px;
-    width: 70%;
-    color: #39b54a;
-    text-align: right;
-}
-
-h4.descripciones {
-    font-size: 16px;
-    display: none;
-}
 
 main {
     width: 90vw;
@@ -164,45 +167,25 @@ main {
 
 }
 
+p.precio {
+    font-size: 16px;
+    width: 30%;
+    text-align: left;
+}
 
-.footer {
-    background-color: white;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
+p.descuentos {
+    font-size: 14px;
+    width: 70%;
+    color: #39b54a;
+    text-align: right;
+}
+
+h4.descripciones {
+    font-size: 16px;
+    display: none;
 
 }
 
-.icon-footer {
-    color: rgb(5, 5, 188);
-    font-size: 2em;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
-
-}
-
-.footer div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    padding-bottom: 10px;
-    width: 100%;
-    
-}
-
-.footer h4 {
-    text-align: center;
-    font-weight: bold;
-}
-
-.footer p {
-    text-align: center;
-}
 
 article img {
     width: 100%;
@@ -219,7 +202,7 @@ article {
     margin-bottom: 10px;
     background-color: white;
     width: 80%;
-
+    transition: all 0.5s;
 }
 
 article:hover .descripciones {
@@ -274,6 +257,41 @@ input[type="text"] {
 }
 
 
+.footer {
+    background-color: white;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-footer {
+    color: rgb(5, 5, 188);
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+transition: all 0.5s;
+}
+
+.footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+
+}
+
+.footer h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer p {
+    text-align: center;
+}
 
 
 
@@ -293,7 +311,7 @@ input[type="text"] {
     .nav-bar {
         display: none;
     }
-    
+
 
 }
 
@@ -322,16 +340,17 @@ input[type="text"] {
         width: 50%;
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 15px;
     }
 
     header nav ul:nth-child(1) {
-        padding-left: 64px;
+        padding-left: 25x;
+        justify-content: flex-start;
     }
 
     header nav ul:nth-child(2) {
         justify-content: flex-end;
-        padding-right: 64px;
+        padding-right: 25px;
     }
 
     .formasdepago {
@@ -359,11 +378,11 @@ input[type="text"] {
     }
 
     .input {
-        padding: 5px;
+        padding: 1px;
         border-radius: 5px;
         width: 20%;
         flex-grow: 1;
-        margin: 2px;
+       
     }
 
     .icon-buscador {
@@ -373,27 +392,44 @@ input[type="text"] {
         border-radius: 5px;
         margin: 2px;
     }
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+
+    }
+
+    .footer div {
+        width: 25%;
+        align-items: center;
+
+
+    }
+
+    .icon-footer:hover {
+        color: skyblue;
+        font-size: 2em;
+        text-align: center;
+
+    }
 
 }
+@media (min-width: 1280px){
+    header nav ul {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
 
-.footer div {
-    width: 25%;
-    align-items: center;
+    header nav ul:nth-child(1) {
+        padding-left: 50px;
+    }
 
-
+    header nav ul:nth-child(2) {
+        justify-content: flex-end;
+        padding-right: 50px;
+    }
 }
-
-.icon-footer:hover {
-    color: skyblue;
-    font-size: 2em;
-    text-align: center;
-
-}
-
-}
-

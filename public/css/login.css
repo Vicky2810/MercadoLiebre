@@ -5,7 +5,8 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     margin: 15px;
-    background-color: gray
+    background-color: gray;
+    transition: all 0.3s;
 }
 
 button[type="reset"] {
@@ -25,10 +26,11 @@ input[type="password"] {
     margin: 15px;
     border: 1px #ccc;
     border-radius: 5px;
-
+    transition: all 0.5s;
 }
 button[type="submit"]:hover{
     background-color: #0022AA;
+
 }
 .main-login {
    
